@@ -1,6 +1,4 @@
-Sure, here's the `README.md` file for your Git GUI application:
 
-```markdown
 # Git GUI Application
 
 This is a Qt-based GUI application for managing Git repositories. The application allows users to perform common Git operations such as creating repositories, cloning repositories, adding and committing changes, pushing and pulling from remotes, and more, all from a user-friendly graphical interface.

@@ -2,6 +2,7 @@
 # Git GUI Application
 
 This is a Qt-based GUI application for managing Git repositories. The application allows users to perform common Git operations such as creating repositories, cloning repositories, adding and committing changes, pushing and pulling from remotes, and more, all from a user-friendly graphical interface.
+![image](https://github.com/NadaMohamedMoharram/GIT-GUI-using-Qt/assets/120272090/d82422c4-0def-4f16-83af-2d3dd21a0f70)
 
 ## Features
 
@@ -81,8 +82,9 @@ This is a Qt-based GUI application for managing Git repositories. The applicatio
 
 ## Screenshots
 
-![Screenshot1](path/to/screenshot1.png)
-![Screenshot2](path/to/screenshot2.png)
+![image](https://github.com/NadaMohamedMoharram/GIT-GUI-using-Qt/assets/120272090/64161eb0-5a74-4d4b-9dc1-b194aa81e40a)
+
+![image](https://github.com/NadaMohamedMoharram/GIT-GUI-using-Qt/assets/120272090/759fd2ee-8edf-471d-a7c5-fe23ffd0bc90)
 
 ## License
 

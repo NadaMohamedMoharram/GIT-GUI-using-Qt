@@ -88,9 +88,7 @@ This is a Qt-based GUI application for managing Git repositories. The applicatio
 
 ![image](https://github.com/NadaMohamedMoharram/GIT-GUI-using-Qt/assets/120272090/759fd2ee-8edf-471d-a7c5-fe23ffd0bc90)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 

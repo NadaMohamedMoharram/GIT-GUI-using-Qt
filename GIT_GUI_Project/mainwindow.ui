@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>939</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="GIT_GUI">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>791</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Git_GUI</string>
+    </property>
+    <widget class="QTabWidget" name="tabWidget_gui">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>29</y>
+       <width>831</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0 rgba(0, 0, 15, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Git_start</string>
+      </attribute>
+      <widget class="QLineEdit" name="lineEdit_clone">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>90</y>
+         <width>331</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="commitButton">
+       <property name="geometry">
+        <rect>
+         <x>442</x>
+         <y>250</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>commit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pullButton">
+       <property name="geometry">
+        <rect>
+         <x>242</x>
+         <y>290</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Pull</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CloneButton">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>410</y>
+         <width>531</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 75, 0, 255));
+
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Clone</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="push_Button">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>290</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Push</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>90</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Remote URL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="statusButton">
+       <property name="geometry">
+        <rect>
+         <x>242</x>
+         <y>250</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>status</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BrowseButton">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>40</y>
+         <width>80</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Browse</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="creatBranchButton">
+       <property name="geometry">
+        <rect>
+         <x>442</x>
+         <y>290</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>create branch</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>10</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 900 italic 12pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>Local URL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="addAllButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>250</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Add all</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_RepoPath">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>331</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="createRepoButton">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>10</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Create Repo</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_1">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>130</y>
+         <width>531</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 170, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Switch_branch_Button">
+       <property name="geometry">
+        <rect>
+         <x>242</x>
+         <y>330</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Switch Branch</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Merge_Button">
+       <property name="geometry">
+        <rect>
+         <x>442</x>
+         <y>330</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Merge</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Log_Button">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>370</y>
+         <width>531</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Log</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="git_branch_Button">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>330</y>
+         <width>141</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Git Branch</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_image3">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>30</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../hqdefault.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_image4">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>230</y>
+         <width>161</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>welcome</string>
+      </attribute>
+      <widget class="QLabel" name="label_image1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>831</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../photo.jpeg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GetStarted_PB">
+       <property name="geometry">
+        <rect>
+         <x>619</x>
+         <y>70</y>
+         <width>141</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.564, y1:0.181864, x2:1, y2:0, stop:0.027933 rgba(255, 115, 0, 255), stop:1 rgba(255, 72, 0, 255));
+font: 700 italic 16pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Get Started</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>939</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
